@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>The Coolest Friend Finder (The CFF)</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jquery -->
+
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+    
+    <style>
+    .container {
+    color: whitesmoke;
+    background: rgb(231, 86, 49);
+    }
+
+    strong {
+        color: whitesmoke;
+    }
+
+    h1, h4 {
+        font-weight: 700;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="">
+
+            <h1><strong>Coolest Friend Finder</strong></h1>
+
+            <br>
+
+            <h2>First, tell us a little about you</h2>
+
+            <br>
+
+            <h4>Your Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required="">
+
+            <h4>Link to a cool image that represents <span></span><strong>YOU</strong></span> (Required)</h4>
+            <input type="text" id="photo" class="form-control" required="">
+
+            <br>
+
+            <h3><strong>Let's get started:</strong></h3>
+            <h4>Rate how much you agree or disagree with the following statements, that's it!</h4>
+
+            <br>
+            <br>
+            <br>
+
+            <h4><strong>One</strong></h4>
+            <h4>Turn on, Tune in, Drop out</h4>
+            <select id="one" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Two</strong></h4>
+            <h4>Going to space would be awesome!</h4>
+            <select id="two" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Three</strong></h4>
+            <h4>Dogs are the bestest</h4>
+            <select id="three" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Four</strong></h4>
+            <h4>We are a cancer to the Earth</h4>
+            <select  id="four" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Five</strong></h4>
+            <h4>Let's break the rules</h4>
+            <select  id="five" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Six</strong></h4>
+            <h4>Nothing Lasts, but Nothing is Lost</h4>
+            <select  id="six" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Seven</strong></h4>
+            <h4>The Body is a Temple and Nightclub at the same time</h4>
+            <select  id="seven" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Eight</strong></h4>
+            <h4>South Park is a super funny show</h4>
+            <select id="eight" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Nine</strong></h4>
+            <h4>South Park is a super funny show</h4>
+            <select id="nine" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><strong>Ten</strong></h4>
+            <h4>Videogames are fun!</h4>
+            <select id="ten" class="chosen-select" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+            <button type="submit" class="btn btn-warning btn-lg " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+        </form>
+
+        <footer>
+            <div class="container">
+                <p href="/api/friends">API Friends List</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+    
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img src="" id="match-img" style="max-width:500px; max-height:500px;">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        <script type="text/javascript">
+
+
+    // // chosen css
+    let config = {
+        ".chosen-select": {},
+        ".chosen-select-deselect": {
+            allow_single_deselect: true
+        },
+        ".chosen-select-no-single": {
+            disable_search_threshold: 10
+        },
+        ".chosen-select-no-results": {
+            no_results_text: "Nothing here.."
+        },
+        ".chosen-select-width": {
+            width: "95%"
+        }
+    };
+
+    
+
+        // capture input from survery
+        $("#submit").on("click", (event) => {
+            event.preventDefault();
+
+            function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function() {
+        if ($(this).val() === "") {
+            isValid = false;
+        }
+        });
+        $(".chosen-select").each(function() {
+        if ($(this).val() === "") {
+            isValid = false;
+        }
+        });
+        return isValid;
+        //random notes for testing
+        //testing
+    }
+    if (validateForm()) {
+            // this should make an object from the survey info
+            let coolData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores:[
+                    $("#one").val(),
+                    $("#two").val(),
+                    $("#three").val(),
+                    $("#four").val(),
+                    $("#five").val(),
+                    $("#six").val(),
+                    $("#seven").val(),
+                    $("#eight").val(),
+                    $("#nine").val(),
+                    $("#ten").val(),
+                ]
+            };
+            console.log(coolData);
+
+            // now I need to send the data to the API
+            $.post("/api/friends", coolData, (data) => {
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+                $("#results-modal").modal("toggle");
+            });
+        } else {
+        alert("Please fill out all fields before submitting!");
+    }
+});
+  
+    </script>
+</body>
+</html>
+

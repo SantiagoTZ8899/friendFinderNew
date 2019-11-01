@@ -6,7 +6,7 @@ let path = require("path");
 // set up express server and port
 
 let app = express();
-let PORT = process.env.port || 8080;
+var PORT = process.env.port || 8080;
 
 app.use(express.urlencoded({ extended: true }));
 // app.use(express.static( "app/public" ));

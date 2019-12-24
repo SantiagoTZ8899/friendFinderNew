@@ -15,51 +15,68 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
-    <!-- ajax -->
-
     <!-- css styling -->
     <style>
+    body {
+        background: rgb(130, 179, 138);
+    }
     .jumbotron {
-        background: rgb(201, 46, 7);
+        background: rgb(221, 221, 221);
+        /* color: black; */
+        border: inset 5px rgb(55, 104, 51);
     }
     .container {
-    color: whitesmoke;
-    background: rgb(231, 86, 49);
+        color: whitesmoke;
+        padding-top: 1%;
+        background: rgb(221, 221, 221);
+        border: black;
+        border-radius: 25px;
     }
 
     strong {
         color: whitesmoke;
     }
 
-    h1, h4 {
+    h1 {
         font-weight: 700;
+        color: black;
     }
+
+    h3 {
+        font-weight: 400;
+        color: black;
+    }
+    .extra {
+        background: rgb(130, 179, 138);
+        width: 100%;
+    }
+    /* .links {
+        float: right;
+    } */
     </style>
 
 </head>
 <body>
-
+    <div class="extra"><br></div>
     <div class="container">
-
         <div class="jumbotron">
-            <h1>Welcome to the Coolest Friend Finder!</h1>
-            <h2>Good Luck finding a cool person!</h2>
+            <h1>Friend Finder</h1>
+            <hr>
+            <h3>Easy as answering a few questions...</h3>
+            <h3>Then see who matches your answers the closest!</h3>
         </div>
 
         <div>
             <a href="/survey">
-                <button type="button" class="btn btn-lg" style="background: rgb(226, 205, 10); color: whitesmoke;">
-                        <h4>Take the Survey and see if you are cool</h4>
+                <button type="button" class="btn btn-lg" style="background: rgb(130, 179, 138); color: whitesmoke;">
+                        <span class="glyphicon glyphicon-list-alt">Take Survey</span>
                 </button>
-            </a>
+                <hr>
+                <p class="links">
+                    <a href="/api/friends">API Friends List | </a><a href="https://github.com/SantiagoTZ8899/friendFinderNew">GitHub Repo</a>
+                </p>
         </div>
     </div>
-
-    <footer>
-            <div class="container">
-                <p href="/api/friends">API Friends List</p>
-            </div>
-    </footer>
 
 </body>
 </html>

@@ -20,16 +20,34 @@
     
     <style>
     .container {
-    color: whitesmoke;
-    background: rgb(231, 86, 49);
-    }
-
-    strong {
         color: whitesmoke;
+        padding-top: 1%;
+        background: rgb(221, 221, 221);
+        border: black;
+        border-radius: 25px;
     }
 
-    h1, h4 {
+    body {
+        background: rgb(130, 179, 138);
+    }
+
+    h1{
         font-weight: 700;
+        color: black;
+    }
+
+    h4, h5 {
+        color: black;
+    }
+
+    h2, h3 {
+        color: black;
+    }
+    #submit {
+        background: rgb(130, 179, 138);
+    }
+    #homebutton {
+        background: rgb(130, 179, 138);
     }
     </style>
 </head>
@@ -38,11 +56,11 @@
     <div class="container">
         <form action="">
 
-            <h1><strong>Coolest Friend Finder</strong></h1>
+            <h1>Friend Finder</h1>
 
-            <br>
+            <hr>
 
-            <h2>First, tell us a little about you</h2>
+            <h3>First, tell us a little about you</h3>
 
             <br>
 
@@ -54,15 +72,13 @@
 
             <br>
 
-            <h3><strong>Let's get started:</strong></h3>
-            <h4>Rate how much you agree or disagree with the following statements, that's it!</h4>
+            <h2>Let's get started:</h2>
+            <h4>Rate how much you agree or disagree with the following statements.</h4>
 
             <br>
-            <br>
-            <br>
 
-            <h4><strong>One</strong></h4>
-            <h4>Turn on, Tune in, Drop out</h4>
+            <h4>Question 1</h4>
+            <h5>Learning is fun</h5>
             <select id="one" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -72,8 +88,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Two</strong></h4>
-            <h4>Going to space would be awesome!</h4>
+            <h4>Question 2</h4>
+            <h5>Going to space would be awesome!</h4>
             <select id="two" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -83,8 +99,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Three</strong></h4>
-            <h4>Dogs are the bestest</h4>
+            <h4>Question 3</h4>
+            <h5>Dogs are the bestest</h5>
             <select id="three" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -94,8 +110,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Four</strong></h4>
-            <h4>We are a cancer to the Earth</h4>
+            <h4>Question 4</h4>
+            <h5>Nature is awe-inspiring</h5>
             <select  id="four" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -105,8 +121,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Five</strong></h4>
-            <h4>Let's break the rules</h4>
+            <h4>Question 5</h4>
+            <h5>Space travel sounds fun!</h5>
             <select  id="five" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -116,8 +132,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Six</strong></h4>
-            <h4>Nothing Lasts, but Nothing is Lost</h4>
+            <h4>Question 6</h4>
+            <h5>Nothing Lasts, but Nothing is Lost</h5>
             <select  id="six" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -127,8 +143,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Seven</strong></h4>
-            <h4>The Body is a Temple and Nightclub at the same time</h4>
+            <h4>Question 7</h4>
+            <h5>I like being the center of attention</h5>
             <select  id="seven" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -138,8 +154,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Eight</strong></h4>
-            <h4>South Park is a super funny show</h4>
+            <h4>Question 8</h4>
+            <h5>South Park is a super funny show</h5>
             <select id="eight" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -149,8 +165,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Nine</strong></h4>
-            <h4>South Park is a super funny show</h4>
+            <h4>Question 9</h4>
+            <h5>I grew up on Nintendo</h5>
             <select id="nine" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -160,8 +176,8 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
 
-            <h4><strong>Ten</strong></h4>
-            <h4>Videogames are fun!</h4>
+            <h4>Question 10</h4>
+            <h5>I like Javascript</h5>
             <select id="ten" class="chosen-select" required>
                 <option value="">Select Option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -173,15 +189,21 @@
 
             <br>
             <br>
-            <br>
 
-            <button type="submit" class="btn btn-warning btn-lg " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+            <button type="submit" class="btn btn-lg " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button><span>
+                <a href="/">
+                    <button type="button" class="btn btn-lg" id="homebutton">
+                        Return Home
+                    </button>
+                </a>
+            </span>
+            <hr>
         </form>
 
         <footer>
-            <div class="container">
-                <p href="/api/friends">API Friends List</p>
-            </div>
+            <p class="links">
+                <a href="/api/friends">API Friends List | </a><a href="https://github.com/SantiagoTZ8899/friendFinderNew">GitHub Repo</a>
+            </p>
         </footer>
     </div>
 
